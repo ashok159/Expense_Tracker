@@ -2,6 +2,9 @@
 
 Introducing "Budget Tracker", a powerful budget tracking application built using Dart and the Flutter framework. This user-friendly app empowers you to take control of your finances and manage your expenses effortlessly.
 
+#### Demo Video:
+https://youtu.be/giJ4I8Y_g8c
+
 ## Technology:
 - Frontend: Dart + Flutter
 - Backend: Firebase - User Authentication, Firestore Database, Hosting
