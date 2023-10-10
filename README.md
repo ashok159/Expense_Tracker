@@ -1,6 +1,6 @@
 # Budget Tracker
 
-Introducing "Budget Master," a powerful budget tracking application built using Dart and the Flutter framework. This user-friendly app empowers you to take control of your finances and manage your expenses effortlessly.
+Introducing "Budget Tracker", a powerful budget tracking application built using Dart and the Flutter framework. This user-friendly app empowers you to take control of your finances and manage your expenses effortlessly.
 
 ## Technology:
 - Frontend: Dart + Flutter
