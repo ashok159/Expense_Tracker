@@ -1,3 +1,8 @@
+#### In Collaboration with: 
+Ashdeep Singh, Bekzod Musayev, Mike Zhang, Yingjie Mei 
+
+09/28/23 - 10/10/23
+
 # Budget Tracker
 
 Introducing "Expense Tracker", a powerful budget tracking application built using Dart and the Flutter framework. This user-friendly app empowers you to take control of your finances and manage your expenses effortlessly.
@@ -22,11 +27,5 @@ Introducing "Expense Tracker", a powerful budget tracking application built usin
 ![Screenshot 2023-10-10 at 3 51 22 PM](https://github.com/ashdeep-singh02/Expense_Tracker/assets/71999538/6f7dee31-73b9-49e3-a4ca-49d0e18a55c4)
 
 ![Screenshot 2023-10-10 at 3 51 45 PM](https://github.com/ashdeep-singh02/Expense_Tracker/assets/71999538/6e760056-2d50-4fc3-8c53-288e93a42886)
-
-
-#### In Collaboration with: 
-Ashok Surujdeo, Bekzod Musayev, Mike Zhang, Yingjie Mei 
-
-09/28/23 - 10/10/23
 
 
