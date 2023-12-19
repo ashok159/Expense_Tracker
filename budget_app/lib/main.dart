@@ -33,6 +33,53 @@ class ExpenseTracker extends StatelessWidget {
   }
 }
 
+// class LandingPage extends StatelessWidget {
+//   const LandingPage({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.teal,
+//         title: Center(
+//           child: Text('Welcome to ExpenseTracker!'),
+//         ),
+//       ),
+//       backgroundColor: Colors.indigo.shade400,
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: [
+//             ElevatedButton(
+//               onPressed: () {
+//                 Navigator.push(context,
+//                     MaterialPageRoute(builder: (context) => LoginPage()));
+//                 print('Login Pressed');
+//               },
+//               style: ButtonStyle(
+//                 backgroundColor: MaterialStateProperty.all(Colors.teal),
+//               ),
+//               child: Text('Login'),
+//             ),
+//             const SizedBox(height: 20),
+//             ElevatedButton(
+//               onPressed: () {
+//                 Navigator.push(context,
+//                     MaterialPageRoute(builder: (context) => SignupPage()));
+//                 print('Signup Pressed');
+//               },
+//               style: ButtonStyle(
+//                 backgroundColor: MaterialStateProperty.all(Colors.teal),
+//               ),
+//               child: Text('Signup'),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
 
@@ -45,35 +92,64 @@ class LandingPage extends StatelessWidget {
           child: Text('Welcome to ExpenseTracker!'),
         ),
       ),
-      backgroundColor: Colors.indigo.shade400,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginPage()));
-                print('Login Pressed');
-              },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.teal),
+      backgroundColor: Colors.transparent,
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.indigo.shade400, Colors.teal.shade300],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoginPage()));
+                  print('Login Pressed');
+                },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.teal),
+                  elevation: MaterialStateProperty.all(8),
+                  padding: MaterialStateProperty.all(EdgeInsets.all(16)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                  ),
+                ),
+                child: Text(
+                  'Login',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
               ),
-              child: Text('Login'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SignupPage()));
-                print('Signup Pressed');
-              },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.teal),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupPage()));
+                  print('Signup Pressed');
+                },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.teal),
+                  elevation: MaterialStateProperty.all(8),
+                  padding: MaterialStateProperty.all(EdgeInsets.all(16)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                  ),
+                ),
+                child: Text(
+                  'Signup',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
               ),
-              child: Text('Signup'),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
